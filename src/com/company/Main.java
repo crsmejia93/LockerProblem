@@ -22,12 +22,14 @@ public class Main {
             for(int j=0; j<lockers.length;j+=i){
                 if(lockers[j]==false) {
                     lockers[j] = true;
-                    System.out.println(j+" The locker is open.");
                 }else if(lockers[j]==true){
                     lockers[j]=false;
-                    System.out.println(j+"The locker is closed.");
                 }
-
+            }
+        }
+        for(int i=0; i<lockers.length; i++){
+            if(lockers[i]){
+                System.out.printf("Locker %d is open.\n",i);
             }
         }
     }
